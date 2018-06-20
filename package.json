@@ -1,12 +1,12 @@
 {
   "name": "emt-api-infrastructure",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "webpack --mode development",
-    "build": "webpack --mode production && dts-bundle-generator -o dist/index.d.ts src/index.ts",
+    "build": "dts-bundle-generator -o dist/index.d.ts src/index.ts",
     "lint": "tslint --project .",
     "test": "mocha -r ts-node/register -r jsdom-global/register ./**/*.spec.ts",
     "docs": "./node_modules/.bin/typedoc --out dist/docs --mode modules ./src/",
