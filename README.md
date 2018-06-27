@@ -2,22 +2,28 @@
 
 # To build you need to build all the packages 
 ## using CMD you can execute the following commands
+
 ```
+
+call  yarn 
 cd ./packages
 cd ./AppShared
-yarn 
-yarn build
+call  yarn 
+call yarn build
 cd..
 
 cd ./Interfaces
-yarn
-yarn build
+call yarn
+call yarn build
 cd..
 
 cd ./Logger
-yarn
-yarn build
+call yarn
+call yarn build
 
 cd..
 cd..
+
 ```
+
+Or you can use *build.bat* script

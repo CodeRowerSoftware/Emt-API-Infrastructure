@@ -1,17 +1,18 @@
+call  yarn 
 cd ./packages
 cd ./AppShared
-yarn 
-yarn build
+call  yarn 
+call yarn build
 cd..
 
 cd ./Interfaces
-yarn
-yarn build
+call yarn
+call yarn build
 cd..
 
 cd ./Logger
-yarn
-yarn build
+call yarn
+call yarn build
 
 cd..
 cd..
