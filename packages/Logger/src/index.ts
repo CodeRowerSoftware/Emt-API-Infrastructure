@@ -1,10 +1,14 @@
-import * as Shared from '@emt/infrastructure_shared';
-import * as Interfaces from '@emt/infrastructure_interfaces';
+import {EmtInterfaces} from '@emt/infrastructure_interfaces';
+import {EmtShared} from "@emt/infrastructure_shared";
 
 export namespace Emt {
-    export class Logger implements Interfaces.Emt.Interfaces.ILogger{
-      log(message: string, type: string): void {
-        console.log(Shared.AppConstants.Global.ADD_MESSAGE, message, type);
-      }
+
+//    const EmtShared = require('@emt/infrastructure_shared');
+
+    export class Logger implements EmtInterfaces.ILogger {
+        log(message: string, type: string): void {
+            debugger;
+            console.log(EmtShared.AppConstants.Global.ADD_MESSAGE, message, type);
+        }
     }
 }

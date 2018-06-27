@@ -2,9 +2,7 @@
 
 import LoggerInterfaces from './logger/ILogger';
 
-export namespace Emt {
-  export namespace Interfaces {
+export namespace EmtInterfaces {
     export import ILogger = LoggerInterfaces.Logger;
-  }
 }
 
