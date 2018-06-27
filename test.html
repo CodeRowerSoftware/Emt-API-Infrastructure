@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<script src="node_modules/@emt/infrastructure_shared/dist/index.js"></script>
+<script>
+  console.log(Emt.Shared.APP_CONSTANTS.Global.ADD_MESSAGE);
+  window.Emt = {
+    Shared: {
+      APP_CONSTANTS: {
+        Global: {
+          ADD_MESSAGE: 'what...'
+        }
+      }
+    }
+  };
+</script>
+<script src="node_modules/@emt/infrastructure_logger/dist/index.js"></script>
+<script>
+  debugger;
+  var logger = new Emt.Logger();
+  logger.log('hello', 'how are you?');
+</script>
+</body>
+</html>
