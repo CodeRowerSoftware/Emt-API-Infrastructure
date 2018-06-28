@@ -1,16 +1,13 @@
 // https://github.com/Microsoft/TypeScript/issues/20273
 
-import { Constants } from './Constants/index';
-//import { Enums, MessageType } from './Enums/index';
+import {Constants} from './Constants/index';
+import {Enums} from './Enums/index';
 
-export namespace EmtShared {
+export namespace emt_infra_shared {
 
-  export const AppConstants = Constants;
+    export import AppConstants = Constants;
+    export import AppEnum = Enums
 
-  export enum MessageType {
-    Toast,
-    Dialog
-  }
 }
 
 

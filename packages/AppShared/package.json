@@ -1,12 +1,12 @@
 {
-  "name": "EmtShared",
+  "name": "emt_infra_shared",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "webpack --mode development",
-    "build": "webpack --mode production && dts-bundle-generator -o dist/index.d.ts src/index.ts",
+    "build": "webpack --mode production && dts-bundle-generator -o dist/index.d.ts dist/@types/index.d.ts",
     "lint": "tslint --project .",
     "test": "mocha -r ts-node/register -r jsdom-global/register ./**/*.spec.ts",
     "docs": "./node_modules/.bin/typedoc --out dist/docs --mode modules ./src/",

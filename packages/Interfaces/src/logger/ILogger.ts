@@ -1,7 +1,8 @@
-import {EmtShared} from 'EmtShared';
+import {emt_infra_shared} from 'emt_infra_shared';
+
 declare namespace LoggerInterfaces {
-  export interface Logger {
-    log(message: string, type: EmtShared.MessageType): void
-  }
+    export interface Logger {
+        log(message: string, type: emt_infra_shared.AppEnum.MessageType): void
+    }
 }
-export default LoggerInterfaces ;
+export default LoggerInterfaces;

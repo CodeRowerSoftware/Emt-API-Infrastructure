@@ -1,8 +1,8 @@
 export namespace Enums {
-  export enum MessageType {
-    Toast,
-    Dialog
-  }
+    export enum MessageType {
+        Toast,
+        Dialog
+    }
 }
 
 

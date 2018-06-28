@@ -10,15 +10,15 @@
         integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
         crossorigin="anonymous">
 </script>
-<script src="node_modules/EmtShared/dist/bundle.js"></script>
+<script src="node_modules/emt_infra_shared/dist/index.js"></script>
 <script>
     debugger;
  //console.log(Emt); // if we use "Emt" namespace in AppShared Package*
- console.log(EmtShared);
+ console.log(emt_infra_shared);
 </script>
-<script src="node_modules/@emt/infrastructure_logger/dist/index.js"></script>
+<script src="node_modules/emt_infra_logger/dist/index.js"></script>
 <script>
-  var logger = new Emt.Logger();
+  var logger = new emt_infra_logger.Logger();
   logger.log('hello', 'how are you?');
 </script>
 </body>

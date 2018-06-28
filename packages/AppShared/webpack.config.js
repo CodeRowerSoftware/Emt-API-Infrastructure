@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: 'dist/index.js',
     path: __dirname,
-    library: 'EmtShared',
+    library: 'emt_infra_shared',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

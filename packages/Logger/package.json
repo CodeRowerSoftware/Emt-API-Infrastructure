@@ -1,12 +1,12 @@
 {
-  "name": "@emt/infrastructure_logger",
+  "name": "emt_infra_logger",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "webpack --mode development",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production  && dts-bundle-generator -o dist/index.d.ts dist/@types/index.d.ts --disable-symlinks-following true",
     "lint": "tslint --project .",
     "test": "mocha -r ts-node/register -r jsdom-global/register ./**/*.spec.ts",
     "docs": "./node_modules/.bin/typedoc --out dist/docs --mode modules ./src/",
@@ -23,8 +23,8 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@emt/infrastructure_interfaces": "0.0.1",
-    "EmtShared": "0.0.1",
+    "emt_infra_interfaces": "0.0.1",
+    "emt_infra_shared": "0.0.1",
     "@types/chai": "^4.1.3",
     "@types/mocha": "^5.2.1",
     "@types/node": "^10.3.6",

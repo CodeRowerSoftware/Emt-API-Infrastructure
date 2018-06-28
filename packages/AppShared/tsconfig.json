@@ -5,6 +5,7 @@
     "lib": ["es5", "es6", "dom"],
     "rootDir": "src",
     "declaration": true,
+    "declarationDir": "./dist/@types",
     "inlineSourceMap": true,
     "baseUrl": ".",
     //    "noImplicitAny": true,
