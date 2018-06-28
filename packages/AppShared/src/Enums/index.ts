@@ -1,8 +1,8 @@
-namespace AppEnums {
+export namespace Enums {
   export enum MessageType {
     Toast,
     Dialog
   }
 }
 
-export default AppEnums;
+
