@@ -9,7 +9,7 @@ var banner = PACKAGE.name + ' - ' + new Date().toUTCString() + ' | ' +
 module.exports = {
   entry: path.join(__dirname, '/src/index.ts'),
   output: {
-    filename: 'dist/bundle.js',
+    filename: 'dist/index.js',
     path: __dirname,
     library: 'EmtShared',
     libraryTarget: 'umd',
